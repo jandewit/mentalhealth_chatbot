@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0">
+    <title>Robin</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="vendor/fontawesome/css/all.css" rel="stylesheet">
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+    <script src="vendor/jquery-3.6.0.min.js"></script>
+    <!--<script src="https://kit.fontawesome.com/d23396265e.js" crossorigin="anonymous"></script>-->
+    <script>if (window.module) module = window.module;</script>
+    <script src="chat.js"></script>
+</head>
+<body>
+
+  <div id="top">
+    <div class="cute-robot-v1">
+      <div class="circle-bg">
+        <div class="robot-ear left"></div>
+        <div class="robot-head">
+          <div class="robot-face">
+            <div class="eyes left"></div>
+            <div class="eyes right"></div>
+            <div class="mouth"></div>
+          </div>
+        </div>
+        <div class="robot-ear right"></div>
+        <div class="robot-body"></div>
+      </div>
+    </div>
+    <div id="name">
+      Robin
+      <div id="status">
+        <!--Your chatbot friend-->
+      </div>
+    </div>
+  </div>
+
+  <div id="messages">
+
+    <!--<div class="bubble_container">
+      <div class="bubble_2_img">
+        <div class="cute-robot-v1 cute-robot-v1-small">
+          <div class="circle-bg">
+            <div class="robot-ear left"></div>
+            <div class="robot-head">
+              <div class="robot-face">
+                <div class="eyes left"></div>
+                <div class="eyes right"></div>
+                <div class="mouth"></div>
+              </div>
+            </div>
+            <div class="robot-ear right"></div>
+            <div class="robot-body"></div>
+          </div>
+        </div>
+      </div>
+      <div class="bubble_2">
+        <div class="bubble_2_tail">
+          <img src="img/chat_gray.svg" />
+        </div>
+        <div class="bubble_2_content">
+          Hi there!<br />Can you tell me about a stressful event from this past week?<br/>
+        </div>
+      </div>
+    </div>
+
+    <div class="bubble_container">
+      <div class="bubble_1">
+        <div class="bubble_1_content">
+          Well, I was trying to study really hard but just couldn't focus 😟
+        </div>
+        <div class="bubble_1_tail">
+          <img src="img/chat_pink.svg" />
+        </div>
+      </div>
+    </div>
+
+  </div>
+  -->
+  <div class="bubble_container" id="typing">
+    <div class="bubble_2_img">
+      <div class="cute-robot-v1 cute-robot-v1-small">
+        <div class="circle-bg">
+          <div class="robot-ear left"></div>
+          <div class="robot-head">
+            <div class="robot-face">
+              <div class="eyes left"></div>
+              <div class="eyes right"></div>
+              <div class="mouth"></div>
+            </div>
+          </div>
+          <div class="robot-ear right"></div>
+          <div class="robot-body"></div>
+        </div>
+      </div>
+    </div>
+    <div class="bubble_2">
+      <div class="bubble_2_content" style="padding-top: 6px; padding-bottom: 6px;">
+        ...
+      </div>
+    </div>
+  </div>
+  <div id="input_message">
+    <div id="input_field" contenteditable="true" placeholder="Typ hier je bericht..."></div>
+    <div id="send_icon" onclick="sendMessage()">
+      <i class="fas fa-paper-plane"></i>
+    </div>
+  </div>
+</body>
+</html>

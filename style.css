@@ -1,0 +1,328 @@
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  background-color: #EBEBEB;
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  overflow: auto;
+  height: 100%;
+  font-size: 16pt;
+}
+
+#top {
+  height: 80px;
+  /*background-color: #BDBDBD;*/
+  background-color: #F6F6F6;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+#name {
+  float: left;
+  font-size: 16pt;
+  font-weight: bold;
+  margin-left: 16px;
+
+}
+
+#status {
+  font-size: 12pt;
+  font-weight: normal;
+  color: #767676;
+}
+
+#input_message {
+  width: 100%;
+  background-color: #E71F5E;
+  height: 80px;
+  position: fixed;
+  bottom: 0px;
+}
+
+#input_field {
+  background-color: #F6F6F6;
+  border-radius: 4px;
+  width: calc(100vw - 96px);
+  margin-left: 16px;
+  height: 56px;
+  margin-top: 8px;
+  overflow-y: auto;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  float: left;
+}
+
+#input_field[placeholder]:empty:before {
+    content: attr(placeholder);
+    color: #555;
+}
+
+#send_icon {
+  float: left;
+  color: #ffffff;
+  font-size: 20pt;
+  margin-top: 12px;
+  margin-left: 12px;
+}
+
+#messages {
+  /*overflow-y: auto;*/
+  padding-top: 80px;
+  padding-bottom: 128px;
+  width: 100%;
+  float: left;
+}
+
+.bubble_container {
+  width: 100%;
+  float: left;
+}
+
+.bubble_1 {
+  max-width: 80%;
+  margin-right: 24px;
+  margin-top: 24px;
+  float: right;
+}
+
+.bubble_1_content {
+  background-color: #E71F5E;
+  color: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  line-height: 20pt;
+}
+
+.bubble_1_tail {
+  width: 100%;
+  text-align: right;
+  margin-top: -4px;
+  position: relative;
+  z-index: 0;
+}
+
+.bubble_1_tail img {
+  width: 16px;
+}
+
+.bubble_2_img {
+  margin-left: 8px;
+  margin-top: 18px;
+  float: left;
+}
+
+.bubble_2_img img {
+  border-radius: 50%;
+  width: 24px;
+}
+
+.bubble_2 {
+  max-width: 80%;
+  margin-left: 16px;
+  margin-top: 24px;
+  float: left;
+}
+
+.bubble_2_content {
+  background-color: #5F5F5F;
+  color: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  line-height: 20pt;
+}
+
+.bubble_2_tail {
+  width: 100%;
+  text-align: left;
+}
+
+.bubble_2_tail img {
+  width: 16px;
+  margin-bottom: -8px;
+}
+
+#typing {
+  display: none;
+  position: relative;
+  /*margin-bottom: 24px;*/
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* From https://dev.to/akhilarjun/css-art-let-s-create-a-cute-robot-part-1-3ng5 */
+.cute-robot-v1 {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.18);
+  transform-origin: 0% 50%;
+  margin-left: 16px;
+  margin-top: 8px;
+  margin-right: -200px;
+}
+.cute-robot-v1 * {
+  box-sizing: border-box;
+}
+.cute-robot-v1 .circle-bg {
+  background: #cedbdd;
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  border: 8px solid #195272;
+  position: relative;
+}
+.cute-robot-v1 .circle-bg:after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  top: -3px;
+  left: 0;
+  border-radius: 100%;
+  border-bottom: 10px solid #195272;
+}
+.cute-robot-v1 .circle-bg:hover .robot-face {
+  top: 40px !important;
+}
+.cute-robot-v1 .circle-bg:hover .eyes {
+  top: 30px !important;
+}
+.cute-robot-v1 .circle-bg:hover .mouth {
+  background: #195272;
+  border: none;
+  clip-path: polygon(0% 30%, 100% 30%, 100% 100%, 0% 100%);
+}
+.cute-robot-v1 .circle-bg:hover .mouth:after {
+  content: "";
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  bottom: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #f9bbbb;
+  border-radius: 100%;
+}
+.cute-robot-v1 .circle-bg .robot-head {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -20px;
+  border: 8px solid #195272;
+  border-radius: 85px/60px;
+  background: #ffffff;
+  z-index: 4;
+}
+.cute-robot-v1 .circle-bg .robot-head:after {
+  content: "";
+  position: absolute;
+  top: -30px;
+  height: 30px;
+  width: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #195272;
+}
+.cute-robot-v1 .circle-bg .robot-head:before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 20px;
+  width: 20px;
+  background: #cedbdd;
+  border: 8px solid #195272;
+  border-radius: 100%;
+}
+.cute-robot-v1 .circle-bg .robot-head .robot-face {
+  height: 120px;
+  width: 160px;
+  background: #cedbdd;
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 8px solid #195272;
+  transition: all 200ms;
+  border-radius: 45px;
+}
+.cute-robot-v1 .circle-bg .robot-head .robot-face .eyes {
+  height: 20px;
+  width: 20px;
+  background: #195272;
+  border-radius: 100%;
+  position: absolute;
+  transition: all 200ms;
+  top: 40px;
+}
+.cute-robot-v1 .circle-bg .robot-head .robot-face .eyes.left {
+  left: 30px;
+}
+.cute-robot-v1 .circle-bg .robot-head .robot-face .eyes.right {
+  right: 30px;
+}
+.cute-robot-v1 .circle-bg .robot-head .robot-face .mouth {
+  height: 45px;
+  width: 45px;
+  border-radius: 100%;
+  border: 8px solid transparent;
+  border-bottom-color: #195272;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50px;
+  overflow: hidden;
+}
+.cute-robot-v1 .circle-bg .robot-ear {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background: #ffffff;
+  border: 8px solid #195272;
+  z-index: 3;
+  top: 30px;
+}
+.cute-robot-v1 .circle-bg .robot-ear.left {
+  left: -20px;
+}
+.cute-robot-v1 .circle-bg .robot-ear.right {
+  right: -20px;
+}
+.cute-robot-v1 .circle-bg .robot-body {
+  height: 50px;
+  width: 100px;
+  border: 8px solid #195272;
+  background: #ffffff;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 25px 25px 30px 30px;
+}
+
+.cute-robot-v1-small {
+  transform: scale(0.12);
+  transform-origin: 0 0;
+  margin-bottom: -600px;
+  margin-top: -16px;
+  margin-right: -220px;
+}
