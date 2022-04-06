@@ -14,7 +14,7 @@ module.exports = function() {
       'typing_time': 4000,
       'type': 'timed',
       'timing': 1000,
-      'text': 'Leuk je te ontmoeten. Ben je klaar om te starten met onze sessie?'
+      'text': 'Leuk je te ontmoeten 😁 Ben je klaar om te starten met onze sessie?'
     },
     { // 3
       'type': 'boolean',
@@ -25,12 +25,12 @@ module.exports = function() {
       'typing_time': 3000,
       'type': 'timed',
       'timing': 1,
-      'text': 'Neem een momentje, we zullen het samen doen.'
+      'text': '😕 Neem een momentje, we zullen het samen doen.'
     },
     { // 5
       'typing_time': 2000,
       'type': 'timed',
-      'timing': 2000,
+      'timing': 8000,
       'text': 'Ok, zullen we beginnen?'
     },
     { // 6
@@ -51,7 +51,7 @@ module.exports = function() {
       'type': 'timed',
       'typing_time': 1000,
       'timing': 1,
-      'text': 'Mooi!'
+      'text': 'Mooi! 🙌'
     },
     { // 10
       'type': 'timed',
@@ -92,7 +92,7 @@ module.exports = function() {
       'type': 'timed',
       'typing_time': 2500,
       'timing': 60000,
-      'text': 'Dat ging volgens mij wel goed. Hoe was het voor jou?'
+      'text': 'Dat ging volgens mij wel goed 😊 Hoe was het voor jou?'
     },
     { // 17
       'type': 'silence',
@@ -109,7 +109,7 @@ module.exports = function() {
     { // 19
       'type': 'silence',
       'typing_time': 4500,
-      'text': 'Heb je tijd gehad om de huiswerkopdracht voor te bereiden, het selecteren van een stressvolle gebeurtenis om over te praten?'
+      'text': 'Heb je tijd gehad om je voor te bereiden, het selecteren van een stressvolle gebeurtenis om over te praten?'
     },
     { // 20
       'type': 'boolean',
@@ -151,217 +151,233 @@ module.exports = function() {
       'type': 'timed',
       'typing_time': 1000,
       'timing': 2500,
-      'text': 'Wat is er gebeurd?'
+      'text': 'Wanneer is dit gebeurd?'
     },
     { // 27
       'type': 'silence',
       'typing_time': 1500,
-      'text': 'Wie waren daarbij betrokken?'
+      'text': 'Waren er anderen bij betrokken?'
     },
     { // 28
       'type': 'silence',
-      'typing_time': 1000,
-      'text': 'Wanneer was dit?'
+      'typing_time': 2100,
+      'text': 'Kun je me vertellen wat er gebeurd is?'
     },
     { // 29
       'type': 'silence',
-      'typing_time': 5000,
-      'text': 'Dat klinkt inderdaad stressvol. Het is goed van je dat je dit met mij wilt delen. Zijn er nog andere dingen die je hierover aan mij kwijt wilt?'
+      'typing_time': 2400,
+      'text': 'Dat klinkt inderdaad stressvol. Hoe voelde dat voor jou?'
     },
     { // 30
       'type': 'silence',
-      'typing_time': 3000,
-      'text': 'Bedankt dat je jouw ervaring met mij hebt gedeeld. Hoe voelde dat voor jou?'
-    },
+      'typing_time': 1700,
+      'text': 'Hoe ben je ermee omgegaaan?'
+    },    
     { // 31
       'type': 'silence',
-      'typing_time': 4000,
-      'text': 'Ik vond dat het goed ging en dat je het heel goed hebt gedaan. De tijd vliegt, we zijn al bijna bij het einde van onze sessie.'
+      'typing_time': 3000,
+      'text': 'Zijn er nog andere dingen die je over deze gebeurtenis aan mij kwijt wilt?'
     },
     { // 32
+      'type': 'silence',
+      'typing_time': 3500,
+      'text': 'Het is goed van je dat je dit met mij wilt delen. Viel het mee of tegen om dit met mij te delen?'
+    },
+    { // 33
+      'type': 'silence',
+      'typing_time': 1000,
+      'timing': 2500,
+      'text': 'Bedankt dat je jouw ervaring met mij hebt gedeeld.'
+    },
+    { // 34
+      'type': 'silence',
+      'typing_time': 4000,
+      'text': 'Ik vond dat het goed ging en dat je het heel goed hebt gedaan 😊 De tijd vliegt, we zijn al bijna bij het einde van onze sessie.'
+    },
+    { // 35
       'type': 'timed',
       'timing': 1500,
       'typing_time': 3200,
-      'text': 'Om onze sessie af te sluiten is het goed om een mindfulness oefening te doen. Zullen we deze oefening samen doen?'
+      'text': 'Om onze sessie af te sluiten is het goed om een oefening te doen. Zullen we deze oefening samen doen?'
     },
-    { // 33
+    { // 36
       'type': 'boolean',
-      'positive': 35,
-      'negative': 34
+      'positive': 38,
+      'negative': 37
     },
-    { // 34
+    { // 37
       'type': 'timed',
       'timing': 1000,
       'typing_time': 3000,
-      'text': 'Kom op! We zijn bijna klaar, alleen nog deze laatste oefening om te zorgen voor een positieve afsluiting.'
+      'text': 'Kom op! We zijn bijna klaar, alleen nog deze laatste oefening om te zorgen voor een positieve afsluiting 😉'
     },
-    { // 35
+    { // 38
       'type': 'timed',
       'timing': 1000,
       'typing_time': 2600,
       'text': 'Ok, zorg dat je comfortabel zit. Probeer mijn instructies te volgen, ben je klaar om te starten?'
     },
-    { // 36
+    { // 39
       'type': 'boolean',
-      'positive': 41,
-      'negative': 37
+      'positive': 44,
+      'negative': 40
     },
-    { // 37
+    { // 40
       'type': 'timed',
       'timing': 1,
       'typing_time': 3500,
       'text': 'Probeer rechtop te zitten en plaats beide voeten op de grond. Hoe is het nu? Heb je een comfortabele houding gevonden?'
     },
-    { // 38
+    { // 41
       'type': 'boolean',
-      'positive': 41,
-      'negative': 39
+      'positive': 44,
+      'negative': 42
     },
-    { // 39
+    { // 42
       'type': 'timed',
       'timing': 1,
       'typing_time': 2000,
-      'text': 'Neem de tijd, en laat me weten als je klaar bent om te beginnen.'
+      'text': 'Neem de tijd, en laat me weten als je klaar bent om te beginnen 🙋'
     },
-    { // 40
+    { // 43
       'type': 'silence',
       'silence_time': 1500,
       'typing_time': 4200,
-      'text': 'Fijn! We gaan een bodyscan doen. Dit is een oefening waar we ons concentreren op verschillende delen van het lichaam en hoe het voelt.',
-      'next': 42
+      'text': 'Fijn! We gaan een lichaamsscan doen. Dit is een oefening waar we ons concentreren op verschillende delen van het lichaam en hoe het voelt.',
+      'next': 45
     },
-    { // 41
+    { // 44
       'type': 'timed',
       'timing': 1,
       'typing_time': 4200,
-      'text': 'Fijn! We gaan een bodyscan doen. Dit is een oefening waar we ons concentreren op verschillende delen van het lichaam en hoe het voelt.'
+      'text': 'Fijn! We gaan een lichaamsscan doen. Dit is een oefening waar we ons concentreren op verschillende delen van het lichaam en hoe het voelt.'
     },
-    { // 42
+    { // 45
       'type': 'timed',
       'timing': 1500,
       'typing_time': 3000,
       'text': 'Wanneer we het lichaam scannen is het mogelijk dat je stress of spanning opmerkt in het lichaam.'
     },
-    { // 43
+    { // 46
       'type': 'timed',
       'timing': 2500,
       'typing_time': 2800,
       'text': 'Dat is ok, als je hiervan bewust wordt probeer het te observeren en rustig naar toe te ademen.'
     },
-    { // 44
+    { // 47
       'type': 'timed',
-      'timing': 4000,
+      'timing': 8000,
       'typing_time': 2000,
       'text': 'Ok, probeer rechtop te zitten en plaats je armen op je bovenbenen.'
     },
-    { // 45
+    { // 48
       'type': 'timed',
-      'timing': 3000,
+      'timing': 10000,
       'typing_time': 2500,
       'text': 'Laat het gewicht van het lichaam in de stoel zakken en breng je aandacht naar je voeten.'
     },
-    { // 46
-      'type': 'timed',
-      'timing': 3000,
-      'typing_time': 2000,
-      'text': 'Voel hoe je voeten contact maken met de grond. '
-    },
-    { // 47
-      'type': 'timed',
-      'timing': 6000,
-      'typing_time': 3500,
-      'text': 'Van de voeten gaan we omhoog naar de benen, richt je aandacht op je linkerbeen en dan op je rechterbeen.'
-    },
-    { // 48
-      'type': 'timed',
-      'timing': 7000,
-      'typing_time': 2400,
-      'text': 'Breng je aandacht rustig naar de heupen en voel hoe je zit op de stoel.'
-    },
     { // 49
       'type': 'timed',
-      'timing': 7500,
+      'timing': 10000,
       'typing_time': 2000,
-      'text': 'Vanaf hier gaan we langzaam omhoog naar de onderrug en buik.'
+      'text': 'Voel hoe je voeten contact maken met de grond.'
     },
     { // 50
       'type': 'timed',
-      'timing': 5500,
-      'typing_time': 2500,
-      'text': 'Adem rustig in en uit, voel hoe de buik uitzet bij een uitademing.'
+      'timing': 8000,
+      'typing_time': 3500,
+      'text': 'Van de voeten gaan we omhoog naar de benen, richt je aandacht op je linkerbeen en dan op je rechterbeen.'
     },
     { // 51
       'type': 'timed',
-      'timing': 7000,
-      'typing_time': 2200,
-      'text': 'Nu verplaatsen we rustig de aandacht naar de borst en bovenrug.'
+      'timing': 12000,
+      'typing_time': 2400,
+      'text': 'Breng je aandacht rustig naar de heupen en voel hoe je zit op de stoel.'
     },
     { // 52
       'type': 'timed',
-      'timing': 7500,
-      'typing_time': 2800,
-      'text': 'Terwijl we verder gaan naar de schouders, voel je hoe de armen op de benen rusten.'
+      'timing': 8000,
+      'typing_time': 2000,
+      'text': 'Vanaf hier gaan we langzaam omhoog naar de onderrug en buik.'
     },
     { // 53
       'type': 'timed',
-      'timing': 5500,
-      'typing_time': 1500,
-      'text': 'Observeer wat je voelt.'
+      'timing': 8000,
+      'typing_time': 2500,
+      'text': 'Adem rustig in en uit, voel hoe de buik uitzet bij een uitademing.'
     },
     { // 54
       'type': 'timed',
-      'timing': 7500,
-      'typing_time': 2100,
-      'text': 'Breng je aandacht nu naar je nek en vanaf hier gaan we naar het hoofd.'
+      'timing': 12000,
+      'typing_time': 2200,
+      'text': 'Nu verplaatsen we rustig de aandacht naar de borst en bovenrug.'
     },
     { // 55
       'type': 'timed',
-      'timing': 6000,
-      'typing_time': 2600,
-      'text': 'Richt je aandacht op je gezicht, dan het achterhoofd en als laatste op de kruin.'
+      'timing': 8000,
+      'typing_time': 2800,
+      'text': 'Terwijl we verder gaan naar de schouders, voel je hoe de armen op de benen rusten.'
     },
     { // 56
       'type': 'timed',
-      'timing': 7500,
+      'timing': 10000,
+      'typing_time': 1500,
+      'text': 'Observeer wat je voelt.'
+    },
+    { // 57
+      'type': 'timed',
+      'timing': 12000,
+      'typing_time': 2100,
+      'text': 'Breng je aandacht nu naar je nek en vanaf hier gaan we naar het hoofd.'
+    },
+    { // 58
+      'type': 'timed',
+      'timing': 8000,
+      'typing_time': 2600,
+      'text': 'Richt je aandacht op je gezicht, dan het achterhoofd en als laatste op de kruin.'
+    },
+    { // 59
+      'type': 'timed',
+      'timing': 15000,
       'typing_time': 2700,
       'text': 'Het is mogelijk dat je in je lichaam ergens spanning of stress bespeurt, dat is ok.'
     },
-    { // 57
+    { // 60
       'type': 'timed',
       'timing': 4000,
       'typing_time': 2000,
       'text': 'Probeer even te blijven zitten terwijl je rustig in en uitademt.'
     },
-    { // 58
+    { // 61
       'type': 'timed',
-      'timing': 5500,
+      'timing': 12000,
       'typing_time': 1700,
       'text': 'Observeer hoe je lichaam voelt in dit moment.'
     },
-    { // 59
+    { // 62
       'type': 'timed',
-      'timing': 8000,
+      'timing': 15000,
       'typing_time': 1500,
-      'text': 'Dat was de body scan! Hoe ging het?'
+      'text': 'Dat was de lichaamsscan! 🙌 Hoe ging het?'
     },
-    { // 60
+    { // 63
       'type': 'silence',
       'typing_time': 6200,
-      'text': 'Ik ben blij dat we dit samen hebben gedaan. Bedankt dat je de tijd hebt genomen om jouw verhaal te vertellen en deze sessie te beeindigen met deze oefening. Je hebt het goed gedaan!'
+      'text': 'Ik vond dat het goed ging. Bedankt dat je de tijd hebt genomen om jouw verhaal te vertellen en deze sessie te beeindigen met deze oefening. Je hebt het goed gedaan!'
     },
-    { // 61
+    { // 64
       'type': 'timed',
       'timing': 3500,
       'typing_time': 2700,
-      'text': 'Dat was het, we hebben het einde bereikt van onze sessie. Ik vond het leuk om met je te praten.'
+      'text': 'Dat was het, we hebben het einde bereikt van onze sessie. Ik vond het leuk om met je te praten 😄'
     },
-    { // 62
+    { // 65
       'type': 'timed',
       'timing': 1500,
       'typing_time': 3500,
       'text': 'Je kunt ons gesprek afsluiten door het scherm te sluiten. Wanneer je er klaar voor bent, kun je de onderzoeker halen voor het laatste deel van het onderzoek.'
     },
-    { // 63
+    { // 66
       'type': 'timed',
       'timing': 1500,
       'typing_time': 1000,
